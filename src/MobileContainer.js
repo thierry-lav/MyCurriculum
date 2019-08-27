@@ -8,7 +8,7 @@ import {
   Segment,
   Sidebar
 } from "semantic-ui-react";
-import HomepageHeading from "../HomepageHeading";
+import HomepageHeading from "./HomepageHeading";
 
 const getWidth = () => {
   const isSSR = typeof window === "undefined";

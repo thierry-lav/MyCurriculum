@@ -7,12 +7,14 @@ import {
   Segment,
   Visibility
 } from "semantic-ui-react";
-import HomepageHeading from "../HomepageHeading";
+import HomepageHeading from "./HomepageHeading";
+
 const getWidth = () => {
   const isSSR = typeof window === "undefined";
 
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
 };
+
 class DesktopContainer extends Component {
   state = {};
 
