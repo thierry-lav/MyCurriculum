@@ -117,7 +117,7 @@ const HomepageLayout = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
+              <Header inverted as="h4" content="About me" />
               <List link inverted>
                 <List.Item>
                   <List.Icon name="mail" />
