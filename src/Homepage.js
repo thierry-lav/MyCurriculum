@@ -57,12 +57,6 @@ const HomepageLayout = () => (
               <Header inverted as="h4" content="About me" />
               <List link inverted>
                 <List.Item>
-                  <List.Icon name="mail" />
-                  <List.Content>
-                    <a href="mailto:lav.thierry@gmail.com">Contact</a>
-                  </List.Content>
-                </List.Item>
-                <List.Item>
                   <List.Icon name="linkedin" />
                   <List.Content>
                     <a href="https://fr.linkedin.com/in/thierry-lav-48a4b927">
