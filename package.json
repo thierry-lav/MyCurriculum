@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "global": "^4.4.0",
     "lodash": "^4.17.13",
     "lodash.template": "^4.5.0",
+    "now": "^16.1.2",
     "overmind": "^19.1.0",
     "overmind-react": "^20.1.0",
     "prop-types": "^15.7.2",
