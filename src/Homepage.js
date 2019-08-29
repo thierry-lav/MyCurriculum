@@ -1,17 +1,22 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Grid,
-  Header,
-  Image,
-  List,
-  Segment
-} from "semantic-ui-react";
+import { Button, Grid, Header, Image, Segment } from "semantic-ui-react";
 import ResponsiveContainer from "./ResponsiveContainer";
+import Footpage from "./Footpage";
+import TopMenu from "./TopMenu";
+
+import HomepageHeading from "./HomepageHeading";
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
+    <Segment
+      inverted
+      textAlign="center"
+      style={{ minHeight: 700, padding: "1em 0em" }}
+      vertical
+    >
+      <TopMenu />
+      <HomepageHeading />
+    </Segment>
     <Segment style={{ padding: "8em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
@@ -49,33 +54,7 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment inverted vertical style={{ padding: "5em 0em" }}>
-      <Container>
-        <Grid divided inverted stackable>
-          <Grid.Row>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="About me" />
-              <List link inverted>
-                <List.Item>
-                  <List.Icon name="linkedin" />
-                  <List.Content>
-                    <a href="https://fr.linkedin.com/in/thierry-lav-48a4b927">
-                      LinkedIn
-                    </a>
-                  </List.Content>
-                </List.Item>
-                <List.Item>
-                  <List.Icon name="github" />
-                  <List.Content>
-                    <a href="https://github.com/thierry-lav">My works</a>
-                  </List.Content>
-                </List.Item>
-              </List>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </Container>
-    </Segment>
+    <Footpage />
   </ResponsiveContainer>
 );
 

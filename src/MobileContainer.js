@@ -9,6 +9,7 @@ import {
   Sidebar
 } from "semantic-ui-react";
 import HomepageHeading from "./HomepageHeading";
+import { Link } from "react-router-dom";
 
 const getWidth = () => {
   const isSSR = typeof window === "undefined";
@@ -41,11 +42,12 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as="a" active>
-            Home
+          <Menu.Item active>
+            <Link to="/">Home</Link>
           </Menu.Item>
-          <Menu.Item as="a">Work</Menu.Item>
-          <Menu.Item as="a">Company</Menu.Item>
+          <Menu.Item>
+            <Link to="/projects">Projects</Link>
+          </Menu.Item>
           <Menu.Item as="a">Careers</Menu.Item>
         </Sidebar>
 

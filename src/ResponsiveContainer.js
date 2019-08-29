@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 
 import DesktopContainer from "./DesktopContainer";
@@ -10,9 +9,5 @@ const ResponsiveContainer = ({ children }) => (
     <MobileContainer>{children}</MobileContainer>
   </div>
 );
-
-ResponsiveContainer.propTypes = {
-  children: PropTypes.node
-};
 
 export default ResponsiveContainer;
