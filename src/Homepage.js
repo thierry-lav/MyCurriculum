@@ -5,7 +5,7 @@ import Footpage from "./Footpage";
 import TopMenu from "./TopMenu";
 
 import HomepageHeading from "./HomepageHeading";
-import HomepageBody from "./HomepageBody";
+import TransitionBody from "./TransitionBody";
 
 function HomepageLayout() {
   return (
@@ -18,7 +18,7 @@ function HomepageLayout() {
       >
         <TopMenu />
         <HomepageHeading />
-        <HomepageBody />
+        <TransitionBody scrollAt="280">Building content...</TransitionBody>
       </Segment>
       <Footpage />
     </ResponsiveContainer>
