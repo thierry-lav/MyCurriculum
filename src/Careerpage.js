@@ -15,7 +15,13 @@ function CareerLayout() {
       >
         <TopMenu />
       </Segment>
-      Building in progress...
+      <Segment style={{ padding: "4em 4em" }} inverted secondary vertical>
+        I am pretty noticeable but you might check out other content before you
+        look at me.
+      </Segment>
+      <Segment style={{ padding: "2em 2em" }} inverted color="red" vertical>
+        Red
+      </Segment>
       <Footpage />
     </ResponsiveContainer>
   );
