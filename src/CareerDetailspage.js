@@ -18,9 +18,33 @@ const details = {
           logo: "sg",
           entreprise: "Société Générale",
           date: "Juin 2018 - Aujourd'hui",
-          description: "",
-          taches: [],
-          technos: []
+          description: "Jarvis : application de calcul de risque de crédit",
+          taches: [
+            "Développement des fonctionnalités",
+            "Développement d'un calculateur supplémentaire",
+            "Développement des tests unitaires",
+            "Participation aux dailys meetings",
+            "Développement de graph Grafana",
+            "Configuration de traefik"
+          ],
+          technos: [
+            "Java 8/11",
+            "Spring boot 2",
+            "TestNg",
+            "AngularJs",
+            "Maven",
+            "Git",
+            "IntelliJ",
+            "Jenkins",
+            "SonarQube",
+            "Grafana",
+            "Ansible Tower",
+            "Prometheus",
+            "ELK",
+            "Swagger",
+            "Traefik",
+            "Consul"
+          ]
         }
       ]
     },
@@ -210,16 +234,8 @@ function CareerDetailLayout({ match }) {
                   <Item.Image size="small" src={logoToRender} />
 
                   <Item.Content>
-                    <Item.Header>
-                      {item.entreprise} ({item.date})
-                    </Item.Header>
-                    <Item.Meta>
-                      <List horizontal relaxed>
-                        {item.technos.map(techno => {
-                          return <List.Item>{techno}</List.Item>;
-                        })}
-                      </List>
-                    </Item.Meta>
+                    <Item.Header>{item.entreprise}</Item.Header>
+                    <Item.Meta>{item.date}</Item.Meta>
                     <Item.Description>
                       {item.description}
 
@@ -229,7 +245,11 @@ function CareerDetailLayout({ match }) {
                         })}
                       </List>
                     </Item.Description>
-                    <Item.Extra></Item.Extra>
+                    <Item.Extra>
+                      {item.technos.map(techno => {
+                        return techno + " ";
+                      })}
+                    </Item.Extra>
                   </Item.Content>
                 </Item>
               );

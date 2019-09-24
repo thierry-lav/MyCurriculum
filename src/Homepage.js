@@ -1,5 +1,5 @@
 import React from "react";
-import { Segment } from "semantic-ui-react";
+import { Segment, Responsive } from "semantic-ui-react";
 import ResponsiveContainer from "./ResponsiveContainer";
 import Footpage from "./Footpage";
 import TopMenu from "./TopMenu";
@@ -18,6 +18,7 @@ function HomepageLayout() {
       >
         <TopMenu />
         <HomepageHeading />
+
         <TransitionBody scrollAt="280">Building content...</TransitionBody>
       </Segment>
       <Footpage />

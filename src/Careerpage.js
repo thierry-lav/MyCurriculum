@@ -106,7 +106,6 @@ function CareerLayout() {
           </Card.Group>
         </Container>
       </Segment>
-      );
       <Footpage />
     </ResponsiveContainer>
   );
