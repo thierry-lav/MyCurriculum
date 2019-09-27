@@ -43,7 +43,15 @@ const details = {
             "ELK",
             "Swagger",
             "Traefik",
-            "Consul"
+            "Consul",
+            "FitNesse",
+            "Mockito",
+            "Apache Ignite",
+            "MyBatis",
+            "Teradata",
+            "MongoDb",
+            "Github",
+            "Nexus"
           ]
         }
       ]
