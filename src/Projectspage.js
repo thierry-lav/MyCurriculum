@@ -1,19 +1,8 @@
 import React from "react";
 import ResponsiveContainer from "./ResponsiveContainer";
-import { Segment, Grid } from "semantic-ui-react";
-import Footpage from "./Footpage";
-import TopMenu from "./TopMenu";
+import { Grid } from "semantic-ui-react";
 const ProjectLayout = () => (
   <ResponsiveContainer>
-    <Segment
-      inverted
-      textAlign="center"
-      style={{ padding: "1em 0em" }}
-      vertical
-    >
-      <TopMenu />
-    </Segment>
-
     <Grid columns={2} padded>
       <Grid.Row>
         <Grid.Column>
@@ -48,8 +37,6 @@ const ProjectLayout = () => (
         </Grid.Column>
       </Grid.Row>
     </Grid>
-
-    <Footpage />
   </ResponsiveContainer>
 );
 

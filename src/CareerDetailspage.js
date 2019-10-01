@@ -1,6 +1,4 @@
 import React from "react";
-import TopMenu from "./TopMenu";
-import Footpage from "./Footpage";
 import ResponsiveContainer from "./ResponsiveContainer";
 
 import { Segment, List, Item, Container } from "semantic-ui-react";
@@ -221,15 +219,6 @@ function CareerDetailLayout({ match }) {
   );
   return (
     <ResponsiveContainer>
-      <Segment
-        inverted
-        textAlign="center"
-        style={{ padding: "1em 0em" }}
-        vertical
-      >
-        <TopMenu />
-      </Segment>
-
       <Segment vertical basic>
         <Container text>
           <Item.Group>
@@ -265,8 +254,6 @@ function CareerDetailLayout({ match }) {
           </Item.Group>
         </Container>
       </Segment>
-
-      <Footpage />
     </ResponsiveContainer>
   );
 }

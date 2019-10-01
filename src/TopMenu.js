@@ -7,7 +7,7 @@ function TopMenu() {
   const { state, actions } = useOvermind();
 
   return (
-    <Responsive {...Responsive.onlyComputer}>
+    <Responsive minWidth={Responsive.onlyTablet.minWidth}>
       <Menu inverted={true} secondary={true} pointing={true} size="large">
         <Container>
           <Menu.Item active={state.menu.home}>

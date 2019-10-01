@@ -1,8 +1,6 @@
 import React from "react";
 import ResponsiveContainer from "./ResponsiveContainer";
-import Footpage from "./Footpage";
 import { Segment, Container, Header, Icon, Card } from "semantic-ui-react";
-import TopMenu from "./TopMenu";
 import { Link } from "react-router-dom";
 
 const pro = {
@@ -47,14 +45,6 @@ const academic = {
 function CareerLayout() {
   return (
     <ResponsiveContainer>
-      <Segment
-        inverted
-        textAlign="center"
-        style={{ padding: "1em 0em" }}
-        vertical
-      >
-        <TopMenu />
-      </Segment>
       <Segment vertical basic>
         <Header as="h2" icon textAlign="center">
           <Icon name={pro.icon} circular />
@@ -106,7 +96,6 @@ function CareerLayout() {
           </Card.Group>
         </Container>
       </Segment>
-      <Footpage />
     </ResponsiveContainer>
   );
 }
