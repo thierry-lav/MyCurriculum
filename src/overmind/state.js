@@ -1,6 +1,6 @@
 export const state = {
   menu: {
-    home: true,
+    home: false,
     projects: false,
     careers: false
   }
