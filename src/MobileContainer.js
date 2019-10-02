@@ -26,6 +26,22 @@ function MobileContainer({ children }) {
       getWidth={getWidth}
       maxWidth={Responsive.onlyMobile.maxWidth}
     >
+      <Sidebar.Pusher dimmed={sidebarOpened}>
+        <Segment
+          inverted
+          textAlign="center"
+          style={{ padding: "1em 0em" }}
+          vertical
+        >
+          <Container>
+            <Menu inverted pointing secondary size="large">
+              <Menu.Item onClick={() => setSidebarOpened(true)}>
+                <Icon name="sidebar" />
+              </Menu.Item>
+            </Menu>
+          </Container>
+        </Segment>
+      </Sidebar.Pusher>
       <Sidebar
         as={Menu}
         animation="push"
@@ -50,24 +66,7 @@ function MobileContainer({ children }) {
           </Link>
         </Menu.Item>
       </Sidebar>
-
-      <Sidebar.Pusher dimmed={sidebarOpened}>
-        <Segment
-          inverted
-          textAlign="center"
-          style={{ minHeight: 350, padding: "1em 0em" }}
-          vertical
-        >
-          <Container>
-            <Menu inverted pointing secondary size="large">
-              <Menu.Item onClick={() => setSidebarOpened(true)}>
-                <Icon name="sidebar" />
-              </Menu.Item>
-            </Menu>
-          </Container>
-        </Segment>
-        {children}
-      </Sidebar.Pusher>
+      {children}
     </Responsive>
   );
 }

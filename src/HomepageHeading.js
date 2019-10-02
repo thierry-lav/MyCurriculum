@@ -18,7 +18,7 @@ const HomepageHeading = () => (
             fontSize: "4em",
             fontWeight: "normal",
             marginBottom: 0,
-            marginTop: "3em"
+            marginTop: "1.5em"
           }}
         />
         <Header

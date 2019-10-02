@@ -7,20 +7,12 @@ import Footpage from "./Footpage";
 
 import TopMenu from "./TopMenu";
 
-import HomepageHeading from "./HomepageHeading";
-
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>
-      <Segment
-        inverted
-        textAlign="center"
-        //style={{ minHeight: 700, padding: "1em 0em" }}
-        vertical
-      >
+      <Segment inverted vertical>
         <TopMenu />
       </Segment>
-
       {children}
       <Footpage />
     </DesktopContainer>

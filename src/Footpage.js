@@ -3,7 +3,7 @@ import React from "react";
 import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 function Footpage() {
   return (
-    <Segment inverted vertical style={{ padding: "5em 0em" }}>
+    <Segment inverted vertical style={{ minHeight: 400, padding: "5em 0em" }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
@@ -21,7 +21,7 @@ function Footpage() {
                 <List.Item>
                   <List.Icon name="github" />
                   <List.Content>
-                    <a href="https://github.com/thierry-lav">My works</a>
+                    <a href="https://github.com/thierry-lav">Github</a>
                   </List.Content>
                 </List.Item>
               </List>
