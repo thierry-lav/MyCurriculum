@@ -219,7 +219,7 @@ function CareerDetailLayout({ match }) {
   );
   return (
     <ResponsiveContainer>
-      <Segment vertical basic>
+      <Segment vertical basic padded="very">
         <Container text>
           <Item.Group>
             {currentEntreprise.experiences.map(item => {

@@ -45,7 +45,7 @@ const academic = {
 function CareerLayout() {
   return (
     <ResponsiveContainer>
-      <Segment vertical basic>
+      <Segment vertical basic padded="very">
         <Header as="h2" icon textAlign="center">
           <Icon name={pro.icon} circular />
           {pro.titre}
@@ -74,7 +74,7 @@ function CareerLayout() {
           </Card.Group>
         </Container>
       </Segment>
-      <Segment vertical basic>
+      <Segment vertical basic padded="very">
         <Header as="h2" icon textAlign="center">
           <Icon name={academic.icon} circular />
           {academic.titre}
